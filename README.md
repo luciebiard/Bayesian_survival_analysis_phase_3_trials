@@ -1,6 +1,6 @@
 In this respository, you may find the code to estimate models such as those presented in “Bayesian survival analysis for early detection of treatment effects in phase 3 clinical trials” paper in Contemporary Clinical Triams Communications (2020).
 
-Here you are few guidelines to use these files:
+Here are some information on how to use these files:
 
     cll_github: Code for analyses corresponding to motivating example 1 in the above mentioned paper
 
