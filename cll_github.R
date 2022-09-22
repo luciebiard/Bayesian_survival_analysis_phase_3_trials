@@ -1,4 +1,3 @@
-setwd("C:/Users/lbiard/Documents/Historical_data/GITHUB")
 library(rstan)
 library(plyr)
 library(R2jags)
@@ -18,17 +17,17 @@ source("functions_historical_data.R")
 # Load all datasets
 #########################################################
 #reconstructed PRIMA historical dataset
-dat0 <- read.table("CLL7SA/prima_data.txt", header=T)
+dat0 <- read.table("prima_data.txt", header=T)
 head(dat0)
 
 # Current trial: final dataset 
 # Due to confidentiality, the original data cannot be shared via open platfor
 # Shared dataset are simulated based on published results of CLL7-SA trial
-dat <-read.table("CLL7SA/bazpower.txt", header=T)
+dat <-read.table("bazpower.txt", header=T)
 head(dat)
 
 # Current trial: interim dataset
-dati <- read.table("CLL7SA/bazpoweri.txt", header=T)
+dati <- read.table("bazpoweri.txt", header=T)
 head(dati)
 
 km_prima <- survfit(Surv(time, evt) ~ arm, dat0)
@@ -214,7 +213,7 @@ stan_data <- list(N_uncensored=N-N_censored,
 )
 
 rstan_options(auto_write = TRUE)
-expo_cpp <- stan_model("CLL7SA/exponential_CPP.stan") # compile stan model, may take a while
+expo_cpp <- stan_model("exponential_CPP.stan") # compile stan model, may take a while
 
 
 stan_data$a0 <- 0.75 # define desired power prior a_0 value
