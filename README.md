@@ -1,1 +1,24 @@
-# Bayesian_survival_analysis_phase_3_trials
+In this respository, you may find the code to estimate models such as those presented in “Bayesian survival analysis for early detection of treatment effects in phase 3 clinical trials” paper in Contemporary Clinical Triams Communications (2020).
+
+Here you are few guidelines to use this code.
+
+Analysis code sub-repository:
+    cll_github: Cide for analyses corresponding to motivating example 1 in the above mentioned paper
+
+Stan models sub-repository:
+    Pooled_piecewise.stan: Stan code for the piecewise model in motivating example 1 in the above mentioned paper
+
+    exponential.stan: Stan code for the exponential model used in motivating example 2 (without power prior)
+
+    exponential_CPP.stan: Stan code for the power prior exponential model used in motivating example 2
+
+Toy datasets sub-repository: 
+
+    bazpower.txt: Simulated dataset mimicking final data from current data in motivating example 2
+
+    bazpoweri.txt: Simulated dataset mimicking interim data from current data in motivating example 2
+
+    prima_data.txt: Reconstructed dataset from PRIMA trial publication (Salles et al - Lancet 2010;377:42-51) using Guyot et al's method (Guyot et al - BMCMRM 2012,12:9) 
+
+The work was performed using R 3.5.1 with rstan version 2.18.2, and rstanarm development version inclusing stan_surv() function. 
+For any question, please contact lucie.biard@-paris.fr.
