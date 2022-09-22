@@ -1,18 +1,14 @@
 In this respository, you may find the code to estimate models such as those presented in “Bayesian survival analysis for early detection of treatment effects in phase 3 clinical trials” paper in Contemporary Clinical Triams Communications (2020).
 
-Here you are few guidelines to use this code.
+Here you are few guidelines to use these files:
 
-Analysis code sub-repository:
-    cll_github: Cide for analyses corresponding to motivating example 1 in the above mentioned paper
+    cll_github: Code for analyses corresponding to motivating example 1 in the above mentioned paper
 
-Stan models sub-repository:
     Pooled_piecewise.stan: Stan code for the piecewise model in motivating example 1 in the above mentioned paper
 
     exponential.stan: Stan code for the exponential model used in motivating example 2 (without power prior)
 
     exponential_CPP.stan: Stan code for the power prior exponential model used in motivating example 2
-
-Toy datasets sub-repository: 
 
     bazpower.txt: Simulated dataset mimicking final data from current data in motivating example 2
 
