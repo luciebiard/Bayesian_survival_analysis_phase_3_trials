@@ -2,7 +2,9 @@ In this respository, you may find the code to estimate models such as those pres
 
 Here are some information on how to use these files:
 
-    cll_github: Code for analyses corresponding to motivating example 1 in the above mentioned paper
+    cll_github.R: Code for analyses corresponding to motivating example 1 in the above mentioned paper
+    
+    functions_historical_data: data-management and plotting functions 
 
     Pooled_piecewise.stan: Stan code for the piecewise model in motivating example 1 in the above mentioned paper
 
